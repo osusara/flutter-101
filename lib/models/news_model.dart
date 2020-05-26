@@ -1,11 +1,4 @@
 class ArticleModel {
-  String author;
-  String title;
-  String description;
-  String url;
-  String urlToImage;
-  String content;
-
   // constructor
   ArticleModel({
     this.author,
@@ -15,4 +8,11 @@ class ArticleModel {
     this.urlToImage,
     this.content,
   });
+
+  String author;
+  String title;
+  String description;
+  String url;
+  String urlToImage;
+  String content;
 }

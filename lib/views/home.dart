@@ -24,6 +24,7 @@ class _HomeState extends State<Home> {
     // TODO: implement initState
     super.initState();
     categories = getCategories();
+    getNews();
   }
 
   getNews() async {
@@ -65,7 +66,6 @@ class _HomeState extends State<Home> {
 
               // Categories
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 16),
                 height: 70,
                 child: ListView.builder(
                   itemCount: categories.length,
